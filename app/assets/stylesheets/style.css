@@ -1,0 +1,58 @@
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+.start{
+  color: #700101;
+}
+
+
+
+.topic{
+  font-size: 78px;
+  color: #ffffff;
+  text-align: center;
+  animation: SlideIn2 2.0s;
+}
+
+.announce{
+  position: absolute;
+  top: 255px;
+  left: 350px;
+  font-size: 100px;
+  color: #ffffff;
+  font-family: inherit;
+  animation: SlideIn 2.0s;
+}
+
+.to-title{
+  text-decoration: none;
+}
+
+.to-bios{
+  text-decoration: none;
+}
+
+.to-artworks{
+  text-decoration: none;
+}
+
+.to-blogs{
+  text-decoration: none;
+}
+
+.to-contacts{
+  text-decoration: none;
+}
+

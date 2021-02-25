@@ -1,0 +1,31 @@
+    <div class="main-contents">
+      <div class="first-view">
+        <ul class="listing" id="listing">
+        <%= link_to bios_path, class: 'to-bios' do %>
+          <li class="toplist" id="select1"><span class="start">B</span>iography</li>
+        <% end %>
+        <%= link_to artworks_path, class: 'to-artworks' do %>
+          <li class="toplist" id="select2"><span class="start">A</span>rtworks</li>
+        <% end %>
+        <%= link_to blogs_path, class: 'to-blogs' do %>
+          <li class="toplist" id="select3"><span class="start">B</span>log</li>
+        <% end %>
+        <%= link_to contacts_path, class: 'to-contacts' do %>
+          <li class="toplist" id="select4"><span class="start">C</span>ontact</li>
+        <% end %>
+        </ul>
+        <p class="signature" id="signature"><span class="start">A</span>sh</p>
+      </div>
+      
+      <div class="bottom-content">
+        <div class="contact-form">
+          <h2 class="heading-name">Ask me anything</h2>
+      <%= form_with model: @contact, class:"contact-form", local: true do |form| %>
+      <%= form.text_field :name, placeholder: "name", class:"small-field" %>
+      <%= form.text_field :email, placeholder: "e-mail", class:"small-field"%>
+      <%= form.text_area :message, placeholder: "message", class:"large-field" %>
+      <%= form.submit "SEND", class:"send"%>
+      <% end %>
+        </div>
+      </div>
+    </div>

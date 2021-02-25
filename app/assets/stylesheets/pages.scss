@@ -1,0 +1,134 @@
+.main-contents {
+  background-color: white;
+}
+
+.first-view{
+  background-image: url("toppage.jpg");
+  height: 100vh;
+  background-size: 100%;
+  position: relative;
+}
+
+.second-view{
+  background-image: url("inside.jpg");
+  height: 100vh;
+  background-size: 100%;
+  position: relative;
+}
+
+.listing{
+  list-style: none;
+  font-size: 60px;
+  padding-top: 70px;
+  padding-left: 120px;
+  padding-right: 1015px;
+  animation: SlideIn 2.0s;
+}
+
+@keyframes SlideIn {
+  0%{
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toplist{
+  color: #f0f0f0;
+  margin-bottom: 100px;
+}
+
+.toplist2{
+  color: #f0f0f0;
+  margin-bottom: 100px;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+.signature{
+  position: absolute;
+  top: 180px;
+  left: 470px;
+  font-size: 250px;
+  color: #f0f0f0;
+  border: 3px solid white;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+
+.announce{
+  position: absolute;
+  top: 255px;
+  left: 350px;
+  font-size: 100px;
+  color: #fdfdfd;
+}
+
+.to-title{
+  text-decoration: none;
+}
+
+.to-bios{
+  text-decoration: none;
+}
+
+.to-artworks{
+  text-decoration: none;
+}
+
+.to-blogs{
+  text-decoration: none;
+}
+
+.to-contacts{
+  text-decoration: none;
+}
+
+/* フォーム */
+
+.heading-name{
+  text-align: center;
+  border-bottom: 1px solid darkred;
+  width: 200px;
+  margin: 40px auto;
+}
+
+.bottom-content {
+  height: 800px;
+  margin: 0 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-field,
+.large-field{
+  width: 800px;
+  font-size: 16px;
+  padding: 15px;
+  border :1px solid #b5aaaa;
+  display: block;
+}
+
+.small-field{
+  margin: 0 auto 15px;
+}
+
+.large-field{
+  height: 300px;
+  margin: 0 auto 30px;
+}
+
+.send{
+  width: 200px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid white;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: block;
+}
