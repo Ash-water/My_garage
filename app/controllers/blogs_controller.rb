@@ -3,7 +3,7 @@ class BlogsController < ApplicationController
   before_action :set_blog, only: [:edit, :show]
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all.order("created_at DESC")
   end
   
   def new
@@ -18,8 +18,8 @@ class BlogsController < ApplicationController
   end
 
   def update
-  blog = Blog.find(params[:id])
-  blog.update(blog_params)
+    blog = Blog.find(params[:id])
+    blog.update(blog_params)
   end
 
   def show
