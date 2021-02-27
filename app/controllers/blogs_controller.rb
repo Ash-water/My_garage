@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+  before_action :basic_auth, only: [:new, :edit, :destroy]
   before_action :set_blog, only: [:edit, :show]
 
   def index
@@ -37,6 +38,12 @@ class BlogsController < ApplicationController
 
   def set_blog
     @blog = Blog.find(params[:id])
+  end
+
+  def basic_auth
+    authenticate_or_request_with_http_basic do |username, password|
+      username == ENV["BASIC_AUTH_USER"] && password == ENV["BASIC_AUTH_PASSWORD"]
+    end
   end
 
 end

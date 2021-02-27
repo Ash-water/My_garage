@@ -13,24 +13,14 @@
 .new-blog{
   position: absolute;
   top: 130px;
-  left: 1100px;
+  left: 900px;
   color: white;
+  opacity: 0;
 }
 
-.sign-up{
-  position: absolute;
-  top: 130px;
-  left: 1200px;
-  color: white;
+.blog-editing{
+  opacity: 0;
 }
-
-.log-in{
-  position: absolute;
-  top: 130px;
-  left: 1300px;
-  color: white;
-}
-
 
 .blog-view{
   width: 100%;
@@ -114,12 +104,6 @@ textarea {
 
 
 
-img,
-object,
-embed {
-  max-width: 100%;
-  height: auto;
-}
 
 object,
 embed {

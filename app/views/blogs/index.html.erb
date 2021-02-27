@@ -2,8 +2,6 @@
   <div class="blog-view">
 
         <div class="topic"><span class="start">M</span>ind Garage</div>
-        <%= link_to "log in", new_blog_path, class:"log-in" %>
-        <%= link_to "sign up", new_blog_path, class:"sign-up" %>
         <%= link_to "new", new_blog_path, class:"new-blog" %>
           <div class="contents row slide">
               <% @blogs.each do |blog| %>
@@ -14,18 +12,16 @@
               <li>
               <%= link_to 'detail', blog_path(blog.id), method: :get %>
               </li>
-              <li>
-              <%= link_to 'edit', edit_blog_path(blog.id), method: :get %>
-              </li>
-              <li>
-              <%= link_to 'delete', blog_path(blog.id), method: :delete %>
-              </li>
               </ul>
               </div>
               <p><%= blog.title %></p>
               <span class="name">
               <%= blog.created_at %>
               </span>
+              </div>
+              <div class="blog-editing">
+              <%= link_to 'edit', edit_blog_path(blog.id), method: :get %>
+              <%= link_to 'delete', blog_path(blog.id), method: :delete %>
               </div>
               <% end %>
           </div>
