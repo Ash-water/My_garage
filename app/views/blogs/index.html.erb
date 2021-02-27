@@ -1,8 +1,31 @@
-    <div class="main-contents">
-      <div class="second-view">
-      <div class="background-gray">
+<div class="main-contents">
+  <div class="blog-view">
+
         <div class="topic"><span class="start">M</span>ind Garage</div>
-        <div class="announce">comming...soon..</div>
-        </div>
-      </div>
-    </div>
+          <div class="contents row">
+              <% @blogs.each do |blog| %>
+              <div class="content_post" style="background-image: url(<%= blog.image %>);">
+              <div class="more">
+              <span><%= image_tag 'arrow_top.png' %></span>
+              <ul class="more_list">
+              <li>
+              <%= link_to 'detail', blog_path(blog.id), method: :get %>
+              </li>
+              <li>
+              <%= link_to 'edit', edit_blog_path(blog.id), method: :get %>
+              </li>
+              <li>
+              <%= link_to 'delete', blog_path(blog.id), method: :delete %>
+              </li>
+              </ul>
+              </div>
+              <p><%= blog.title %></p>
+              <span class="name">
+              <%= blog.created_at %>
+              </span>
+              </div>
+              <% end %>
+          </div>
+      
+  </div>
+</div>
