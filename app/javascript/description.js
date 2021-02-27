@@ -9,6 +9,20 @@ const show_app = () => {
   const show_f = document.getElementById('show-app3')
   
   bottles.addEventListener('click', function(){
+    if (this.getAttribute("style") == "border-bottom: solid 1px white;") {
+      this.removeAttribute("style", "border-bottom: solid 1px white;")
+    } else {
+      this.setAttribute("style", "border-bottom: solid 1px white;")
+    }
+
+    if (pictweet.getAttribute("style") == "border-bottom: solid 1px white;") {
+      pictweet.removeAttribute("style", "border-bottom: solid 1px white;")
+    }
+
+    if (FURIMA.getAttribute("style") == "border-bottom: solid 1px white;") {
+      FURIMA.removeAttribute("style", "border-bottom: solid 1px white;")
+    }
+
     if  (show_b.getAttribute("style") == "display:block;") {
       show_b.removeAttribute("style", "display:block;")
     } else {
@@ -22,9 +36,25 @@ const show_app = () => {
     if  (show_f.getAttribute("style") == "display:block;") {
       show_f.removeAttribute("style", "display:block;")
     }
+    
   })
 
   pictweet.addEventListener('click', function(){
+
+    if (this.getAttribute("style") == "border-bottom: solid 1px white;") {
+      this.removeAttribute("style", "border-bottom: solid 1px white;")
+    } else {
+      this.setAttribute("style", "border-bottom: solid 1px white;")
+    }
+
+    if (bottles.getAttribute("style") == "border-bottom: solid 1px white;") {
+      bottles.removeAttribute("style", "border-bottom: solid 1px white;")
+    }
+
+    if (FURIMA.getAttribute("style") == "border-bottom: solid 1px white;") {
+      FURIMA.removeAttribute("style", "border-bottom: solid 1px white;")
+    }
+
     if  (show_p.getAttribute("style") == "display:block;") {
       show_p.removeAttribute("style", "display:block;")
     } else {
@@ -42,6 +72,21 @@ const show_app = () => {
   })
 
   FURIMA.addEventListener('click', function(){
+
+    if (this.getAttribute("style") == "border-bottom: solid 1px white;") {
+      this.removeAttribute("style", "border-bottom: solid 1px white;")
+    } else {
+      this.setAttribute("style", "border-bottom: solid 1px white;")
+    }
+
+    if (bottles.getAttribute("style") == "border-bottom: solid 1px white;") {
+      bottles.removeAttribute("style", "border-bottom: solid 1px white;")
+    }
+
+    if (pictweet.getAttribute("style") == "border-bottom: solid 1px white;") {
+      pictweet.removeAttribute("style", "border-bottom: solid 1px white;")
+    }
+
     if  (show_f.getAttribute("style") == "display:block;") {
       show_f.removeAttribute("style", "display:block;")
     } else {
