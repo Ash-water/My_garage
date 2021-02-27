@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :pages, only: :index
   resources :bios, only: :index
   resources :artworks, only: :index
-  resources :blogs, only: [:index, :new, :crate, :show, :edit]
+  resources :blogs
   resources :contacts, only: [:index, :new, :create]
   
 end
