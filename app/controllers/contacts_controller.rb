@@ -4,8 +4,13 @@ class ContactsController < ApplicationController
   end
 
   def create
-    Contact.create(contact_params)
+    @contact = Contact.new(contact_params)
+    if @contact.save
+    ContactMailer.contact_mail(@contact).deliver
     redirect_to root_path
+    else
+    render index
+    end
   end
 
   private
