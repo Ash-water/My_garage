@@ -2,7 +2,10 @@
   <div class="blog-view">
 
         <div class="topic"><span class="start">M</span>ind Garage</div>
-          <div class="contents row">
+        <%= link_to "log in", new_blog_path, class:"log-in" %>
+        <%= link_to "sign up", new_blog_path, class:"sign-up" %>
+        <%= link_to "new", new_blog_path, class:"new-blog" %>
+          <div class="contents row slide">
               <% @blogs.each do |blog| %>
               <div class="content_post" style="background-image: url(<%= blog.image %>);">
               <div class="more">
