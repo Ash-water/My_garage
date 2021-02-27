@@ -26,15 +26,6 @@ ul,li {
   
 }
 
-.announce{
-  position: absolute;
-  top: 255px;
-  left: 350px;
-  font-size: 100px;
-  color: #ffffff;
-  font-family: inherit;
-  animation: SlideIn 2.0s;
-}
 
 .to-title{
   text-decoration: none;

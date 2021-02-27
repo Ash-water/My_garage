@@ -1,86 +1,96 @@
-    <div class="main-contents">
-      <div class="second-view">
-        <div class="artworks-background">
-        <%# <h1 class="topic">-<span class="start">A</span>rtworks-</h1> %>
-          <ul class="artworks">
-            <li class="artwork1" id="artworks1"><span class="start">B</span>ottles</li>
-            <li class="artwork2" id="artworks2"><span class="start">P</span>ictweet</li>
-            <li class="artwork3" id="artworks3"><span class="start">F</span>URIMA</li>
-          </ul>
-          
-          <div class="app-description" id="bottles-desc">
-            <div>
-              <br>
-              Bottles / Your Private Idea Beach<br>
-              <br>
-              アイディア思考管理アプリです。<br>
-              基本的な使い方としては何か思いついた時にアイディアを書き込み投稿し<br>
-              管理するアプリです。<br>
-              好きなデザインで自分だけの専用アプリを作りたくて作りました。<br>
-              MVCモデルやCRUD操作、Railsのフレームワークなど<br>
-              基本的な部分をおさらいする形で作成しています。<br>
-              <br>
-              <br>
-              まだまだ完成ではなくどんどん拘っていきたいと思っています。<br>
-              最終的にはスマホアプリにまで落とし込む予定です。<br>
-              <br>
-              <br>
-              開発環境、使用言語<br>
-              HTML, CSS, Javascript, Ruby, Ruby on Rails, MySQL, Github<br>
-              <br>
-              <a href="https://github.com/Ash-water/bottles" class="link">https://github.com/Ash-water/bottles</a>
-            </div>
-            <div class="app-url"><a href="https://bottles-ypib.herokuapp.com" class="link">https://bottles-ypib.herokuapp.com/</a></div>
-            <img src=assets/bottles-top class="app-top">
-          </div>
+<div class="main-contents">
+  <div class="second-view">
+    <div class="artworks-background">
 
-          <div  class="app-description" id="pictweet-desc">
-            <div>
-              <br>
-              Pictweet<br>
-              <br>
-              おなじみ課題アプリ、写真版○イッターのようなアプリです<br>
-              Railsのフレームワークを学びはじめた時に一番最初に作ったアプリです<br>
-              こちらでCRUDによるDB操作やdevise、Active_StorageなどのGemによる追加機能<br>
-              アソシエーションの組み方など<br>
-              アプリの基本的な開発の仕方を学んでいきました。
-              <br>
-              初めて作成したアプリですので、出来上がった時は感動したのを覚えています<br>
-              <br>
-              <br>
-              開発環境、使用言語<br>
-              HTML, CSS, Javascript, Ruby, Ruby on Rails, MySQL<br>
-              <br>
-              Githubについて学ぶ前ですのでGithubにソースコードを公開してません<br>
-              （のちに追加するかも）
-            </div>
-            <div class="app-url">heroku未公開なのでURLがありません</div>
-            <img src=assets/ alt="pictweetの画像は準備中です"class="app-top">
-          </div>
-
-          <div class="app-description" id="FURIMA-desc">
-            <div>
-              <br>
-              FURIMA<br>
-              <br>
-              おなじみ課題アプリその２、フリマアプリのクローンサイトです<br>
-              ここで外部APIによるクレジット決済機能やフォームオブジェクトを用いた<br>
-              フォームの実装などアプリ作成の発展系として学びました。<br>
-              <br>
-              使用するテーブルや考慮すべきアソシエーション<br>
-              フォームオブジェクトとクレジット決済の組み合わせなどが非常に複雑で苦戦したのを覚えています<br>
-              <br>
-              <br>
-              開発環境、使用言語<br>
-              HTML, CSS, Javascript, Ruby, Ruby on Rails, MySQL, Github<br>
-              <br>
-              <a href="https://github.com/Ash-water/furima-33517" class="link">https://github.com/Ash-water/furima-33517</a>
-            </div>
-            <div class="app-url"><a href="https://furima-33517.herokuapp.com/" class="link">https://furima-33517.herokuapp.com/</a></div>
-            <img src=assets/furima-top class="app-top">
-          </div>
-          <div class="close-btn" id="close-btn">× Close</div>
-        </div>
-      </div>
+    <div class="artworks">
+      <ul class="artworks-list">
+        <li class="artwork" id="bottles"><span class="start">B</span>ottles</li>
+        <li class="artwork" id="pictweet"><span class="start">P</span>ictweet</li>
+        <li class="artwork" id="FURIMA"><span class="start">F</span>URIMA</li>
+      </ul>
     </div>
-    
+
+    <div class="black-label display" id="show-app1">
+    <div class="app-description">
+      Bottles / Your Private Idea Beach<br>
+      <br>
+      アイディア思考管理アプリです。<br>
+      基本的な使い方としては何か思いついた時にアイディアを書き込み投稿し<br>
+      管理する。そんなアプリです。<br>
+      好きなデザインで自分だけの専用アプリを作りたくて作りました。<br>
+      MVCモデルやCRUD操作、Railsのフレームワークなど<br>
+      基本的な部分をおさらいする形で作成しています。<br>
+      <br>
+      まだまだ完成ではなくどんどん拘っていきたいと思っています。<br>
+      シェア機能やコメント機能をひとまずは考えています。<br>
+      最終的にはスマホアプリにまで落とし込む予定です。<br>
+      <br>
+      <br>
+      <br>
+      開発環境、使用言語<br>
+      HTML, CSS, Javascript, Ruby, Ruby on Rails, MySQL, Github<br>
+      <br>
+      <a href="https://github.com/Ash-water/bottles" class="link2">https://github.com/Ash-water/bottles</a>
+      <br>
+    </div>
+    <img src="assets/bottles-top" class="app-photo">
+    <div class="app-url"><a href="https://bottles-ypib.herokuapp.com" class="link2">https://bottles-ypib.herokuapp.com/</a></div>
+    </div>
+
+    <div class="black-label display" id="show-app2">
+    <div class="app-description">
+        Pictweet<br>
+      <br>
+      おなじみ課題アプリその1。写真版○イッターのようなアプリです。<br>
+      Railsのフレームワークを学びはじめた時に一番最初に作ったアプリです<br>
+      <br>
+      こちらでCRUDによるDB操作やdevise、Active_StorageなどのGemによる追加機能<br>
+      アソシエーションの組み方、ネスト構造や検索機能など<br>
+      アプリの基本的な開発の仕方を学んでいきました。<br>
+      <br>
+      現状githubにもherokuにも公開しておらず、内容は確認できませんが<br>
+      私のポートフォリオサイトのブログ機能「Mind Garage」に流用しており<br>
+      簡単なイメージはそちらで掴んでいただくことができます。
+      <br>
+      <br>
+      <br>
+      <br>
+      開発環境、使用言語<br>
+      HTML, CSS, Javascript, Ruby, Ruby on Rails, MySQL<br>
+      <br>
+      Githubについて学ぶ前ですのでソースコードを公開してません。<br>
+    </div>
+    <img src="assets/mind_garage_top" class="app-photo">
+    <div class="app-url">※ Mind Garageの画像です</div>
+    </div>
+
+    <div class="black-label display" id="show-app3">
+    <div class="app-description">
+      <br>
+      FURIMA<br>
+      <br>
+      おなじみ課題アプリその２、フリマアプリのクローンサイトです。<br>
+      シンプルに○ルカリ。購入や出品にかかわる機能の実装が増えて<br>
+      より一層サービスを作った感覚になりました。<br>
+      <br>
+      ここで外部APIによるクレジット決済機能やフォームオブジェクトを用いた<br>
+      フォームの実装、ActiveHashなどアプリ作成の発展系として学びました。<br>
+      <br>
+      使用するテーブルや考慮すべきアソシエーション<br>
+      フォームオブジェクトとクレジット決済の組み合わせ、<br>
+      などが非常に複雑で苦戦したのを覚えています。<br>
+      <br>
+      <br>
+      <br>
+      開発環境、使用言語<br>
+      HTML, CSS, Javascript, Ruby, Ruby on Rails, MySQL<br>
+      <br>
+      <a href="https://github.com/Ash-water/furima-33517" class="link2">https://github.com/Ash-water/furima-33517</a>
+    </div>
+    <img src="assets/furima-top" class="app-photo">
+    <div class="app-url"><a href="https://furima-33517.herokuapp.com/" class="link">https://furima-33517.herokuapp.com/</a></div>
+    </div>
+
+    </div>
+  </div>
+</div>

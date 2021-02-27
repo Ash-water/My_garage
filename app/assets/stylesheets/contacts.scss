@@ -5,3 +5,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.announce{
+  position: absolute;
+  top: 255px;
+  left: 420px;
+  font-size: 100px;
+  color: #fdfdfd;
+  font-family: serif;
+  animation: SlideIn 2.0s;
+}
